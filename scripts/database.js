@@ -10,53 +10,60 @@ const database = {
         id: 1,
         name: "Alphonse Meron",
         email: "ameron0@mashable.com",
-        city: "Chicago"
+        citiesId: 11
     }, {
         id: 2,
         name: "Damara Pentecust",
         email: "dpentecust1@apache.org",
-        city: "White Plains"
+        citiesId: 10
     }, {
         id: 3,
         name: "Anna Bowton",
         email: "abowton2@wisc.edu",
-        city: "Sarasota"
+        citiesId: 9
     }, {
         id: 4,
         name: "Hunfredo Drynan",
         email: "hdrynan3@bizjournals.com",
-        city: "San Diego"
+        citiesId: 8
     }, {
         id: 5,
         name: "Elmira Bick",
         email: "ebick4@biblegateway.com",
-        city: "Boise"
+        citiesId: 7
     }, {
         id: 6,
         name: "Bernie Dreger",
         email: "bdreger5@zimbio.com",
-        city: "Denver"
+        citiesId: 6
     }, {
         id: 7,
         name: "Rolando Gault",
         email: "rgault6@google.com",
-        city: "Tucson"
+        citiesId: 5
     }, {
         id: 8,
         name: "Tiffanie Tubby",
         email: "ttubby7@intel.com",
-        city: "Phoenix"
+        citiesId: 4
     }, {
         id: 9,
         name: "Tomlin Cutill",
         email: "tcutill8@marketwatch.com",
-        city: "Minneapolis"
+        citiesId: 3
     }, {
         id: 10,
         name: "Arv Biddle",
         email: "abiddle9@cafepress.com",
-        city: "Pittsburgh"
-    }],
+        citiesId: 2
+    },
+    {
+        id: 14,
+        name: "Amelia Anderson",
+        email: "amelia@andersonfam.com",
+        citiesId: 1
+    }
+],
     pets: [{
         id: 1,
         name: "Dianemarie Hartness",
@@ -97,7 +104,65 @@ const database = {
         id: 10,
         name: "Panda",
         walkerId: 7
-    }]
+    }
+],
+    cities: [{
+        id :1,
+        name: "San Diego"
+    },
+    {
+        id :2,
+        name: "Pittsburg"
+    },
+    {
+        id :3,
+        name: "Minneapolis"
+    },
+    {
+        id :4,
+        name: "Pheonix"
+    },
+    {
+        id :5,
+        name: "Tucson"
+    },
+    {
+        id :6,
+        name: "Denver"
+    },
+    {
+        id :7,
+        name: "Boise"
+    },
+    {
+        id :8,
+        name: "San Diego"
+    },
+    {
+        id :9,
+        name: "Sarasota"
+    },
+    {
+        id :10,
+        name: "White Plains"
+    },
+    {
+        id :11,
+        name: "Chicago"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+]
 }
 
 export const getWalkers = () => {
@@ -107,4 +172,8 @@ export const getWalkers = () => {
 export const getPets = () => {
     return database.pets.map(pet => ({...pet}))
 }
+export const getCities = () => {
+    return database.cities.map(city => ({...city}))
+}
+
 
